@@ -15,8 +15,8 @@ sudo rsync -aHv --delete-during --exclude-from=/rsync-exclude.txt / /mnt/usbdriv
 # TO RESTORE, use following at cmd prompt (not in this script):
 #rsync -av --delete-during /mnt/usbdrive/ /mnt/sdcard_partition2
 
-# Compress output of rsync above to .tar file - CONFIRMED: WORKS
-sudo /home/.dotfiles/pi_bak.sh > /rsync_pi/pi_bak-`date +\%Y\%m\%d\%H\%M`.tar.gz
+# Compress output of rsync above to .tar file - Partially works, needs refinement
+#sudo ./dotfiles/pi_bak.sh > /rsync_pi/pi_bak-`date +\%Y\%m\%d\%H\%M`.tar.gz
 
-# Copy 'rsync_pi/" over to usb "rsync_pi_usb/"
-sudo cp -r /rsync_pi /mnt/usbdrive/rsync_pi_usb/
+# Copy 'rsync_pi/" over to usb "rsync_pi/"
+sudo cp -r /rsync_pi/ /mnt/usbdrive/rsync_pi/

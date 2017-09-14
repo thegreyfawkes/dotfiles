@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES_DIR=$HOME/.dotfiles
+DOTFILES_DIR=$HOME/pi/dotfiles
 UNIVERSAL_PROGRAMS=(vim tmux curl git nmap);
 # not added yet: tig, htop, vifm, zsh, sqlite3
 
